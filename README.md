@@ -1,9 +1,9 @@
 # ArcTextView
-[![](https://jitpack.io/v/gq97a6/ArcTextView.svg)](https://jitpack.io/#gq97a6/ArcTextView)
-![GitHub](https://img.shields.io/github/license/gq97a6/ArcTextView)
-![GitHub top language](https://img.shields.io/github/languages/top/gq97a6/ArcTextView)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/gq97a6/ArcTextView)
-![GitHub all releases](https://img.shields.io/github/downloads/gq97a6/ArcTextView/total)
+[![](https://jitpack.io/v/gq97a6/arc_textview.svg)](https://jitpack.io/#gq97a6/arc_textview)
+![GitHub](https://img.shields.io/github/license/gq97a6/arc_textview)
+![GitHub top language](https://img.shields.io/github/languages/top/gq97a6/arc_textview)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/gq97a6/arc_textview)
+![GitHub all releases](https://img.shields.io/github/downloads/gq97a6/arc_textview/total)
 
 <img src="/README_SCREENSHOOT.jpg" alt="ArcTextView Screenshot" width="320" height="auto">
 

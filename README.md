@@ -23,10 +23,12 @@ Copy sources and `attrs.xml` in module `arctextview` to your project.
 
 ## Usage
 
-To change ArcTextView properties during runtime use:
 ```
-arcTextView.text = "string"
-arcTextView.invalidate()
+<com.arctextview.ArcTextView
+    android:layout_width="dimension"
+    android:layout_height="dimension"
+    app:text="string"
+    app:textSize="dimension" />
 ```
 
 ArcTextView supports following attributes:
@@ -42,4 +44,16 @@ app:textOrientation="enum"    || Side to witch text will be facing
 app:textPlacement="enum"      || Side of circle on which text will be drawn
 app:textSize="dimension"      || ¯\_(ツ)_/¯
 app:textStyle="enum"          || Default text typeface style
+```
+
+To change ArcTextView properties during runtime use:
+```
+arcTextView.text = "string"
+arcTextView.invalidate()
+```
+
+To prevent view clipping ether add padding or include following in parent xml layout.
+If necessary, include it in its parent too.
+```
+android:clipChildren="false"
 ```

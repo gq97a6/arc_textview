@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ArcTextView.iml" filepath="$PROJECT_DIR$/.idea/modules/ArcTextView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ArcTextView.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ArcTextView.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/arcTextView/ArcTextView.arcTextView.iml" filepath="$PROJECT_DIR$/.idea/modules/arcTextView/ArcTextView.arcTextView.iml" />
+    </modules>
+  </component>
+</project>

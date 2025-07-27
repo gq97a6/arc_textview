@@ -1,10 +1,10 @@
-package com.arctextview
+package com.alteratom.arctextview.lib
 
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
-import com.alteratom.arctextview.lib.R
+import androidx.core.graphics.toColorInt
 
 open class ArcTextView(
     context: Context,
@@ -51,7 +51,7 @@ open class ArcTextView(
         val textHeight = textBounds.height().toFloat()
 
 
-        var pad = intArrayOf(paddingLeft, paddingRight, paddingTop, paddingBottom)
+        val pad = intArrayOf(paddingLeft, paddingRight, paddingTop, paddingBottom)
 
         //Create rect
         val rectF = RectF(
@@ -85,8 +85,7 @@ open class ArcTextView(
             }
 
             //Set text placement
-            var vOffset =
-                if (textPlacement.type != textOrientation.type) textHeight else 0f
+            val vOffset = if (textPlacement.type != textOrientation.type) textHeight else 0f
 
             //Draw text
             canvas.drawTextOnPath(
@@ -114,20 +113,20 @@ open class ArcTextView(
             try {
                 text = getString(R.styleable.ArcTextView_text) ?: "placeholder"
                 textSize = getDimension(R.styleable.ArcTextView_textSize, 30f)
-                textColor = getColor(R.styleable.ArcTextView_textColor, Color.parseColor("#999999"))
+                textColor = getColor(R.styleable.ArcTextView_textColor, "#999999".toColorInt())
                 textStyle = getInt(R.styleable.ArcTextView_textStyle, Typeface.NORMAL)
 
                 textPlacement =
-                    TextPlacement.values()[getInt(R.styleable.ArcTextView_textPlacement, 0)]
+                    TextPlacement.entries.toTypedArray()[getInt(R.styleable.ArcTextView_textPlacement, 0)]
                 textOrientation =
-                    TextOrientation.values()[getInt(R.styleable.ArcTextView_textOrientation, 0)]
+                    TextOrientation.entries.toTypedArray()[getInt(R.styleable.ArcTextView_textOrientation, 0)]
                 textDirection =
-                    TextDirection.values()[getInt(R.styleable.ArcTextView_textDirection, 0)]
+                    TextDirection.entries.toTypedArray()[getInt(R.styleable.ArcTextView_textDirection, 0)]
 
                 fontFamily = getString(R.styleable.ArcTextView_fontFamily)
 
                 angle = getFloat(R.styleable.ArcTextView_anchorAngle, -90f)
-                anchorType = AnchorType.values()[getInt(R.styleable.ArcTextView_anchorType, 1)]
+                anchorType = AnchorType.entries.toTypedArray()[getInt(R.styleable.ArcTextView_anchorType, 1)]
 
                 drawDebugCircle = getBoolean(R.styleable.ArcTextView_drawDebugCircle, false)
             } finally {

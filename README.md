@@ -52,7 +52,7 @@ arcTextView.text = "string"
 arcTextView.invalidate()
 ```
 
-To prevent view clipping ether add padding or include following in parent xml layout.
+To prevent view clipping either add padding or include following in parent xml layout.
 If necessary, include it in its parent too.
 ```
 android:clipChildren="false"

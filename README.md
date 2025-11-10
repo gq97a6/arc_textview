@@ -17,7 +17,7 @@ First build and publish the project
 Use in separate project
 ``` Gradle
 dependencies {
-    implementation("org.labcluster.arctextview:arctextview:2.0.0")
+    implementation("org.labcluster.arctextview:arctextview:3.0.0")
 }
 ```
 

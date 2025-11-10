@@ -1,5 +1,4 @@
 # ArcTextView
-[![](https://jitpack.io/v/gq97a6/arc_textview.svg)](https://jitpack.io/#gq97a6/arc_textview)
 ![GitHub](https://img.shields.io/github/license/gq97a6/arc_textview)
 ![GitHub top language](https://img.shields.io/github/languages/top/gq97a6/arc_textview)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/gq97a6/arc_textview)

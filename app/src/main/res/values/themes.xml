@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.ArcTextView" parent="Theme.MaterialComponents.NoActionBar" />
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:clipChildren="false"
+    tools:context="org.labcluster.arctextview.app.MainActivity">
+
+    <!--
+        o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o
+                         ADD
+             android:clipChildren="false"
+          TO PARENT VIEW TO PREVENT CLIPPING
+        o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o
+   -->
+
+    <org.labcluster.arctextview.ArcTextView
+        android:id="@+id/random_number"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_gravity="center"
+        app:anchorAngle="-90"
+        app:anchorType="center"
+        app:drawDebugCircle="true"
+        app:text="00000000"
+        app:textColor="#FFFFFF"
+        app:textDirection="anticlockwise"
+        app:textOrientation="outward"
+        app:textPlacement="outer"
+        app:textSize="30dp"
+        app:textStyle="normal" />
+
+    <org.labcluster.arctextview.ArcTextView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:anchorAngle="-90"
+        app:anchorType="center"
+        app:drawDebugCircle="true"
+        app:fontFamily="@null"
+        app:text="PLACEHOLDER"
+        app:textColor="#FFFFFF"
+        app:textDirection="clockwise"
+        app:textOrientation="outward"
+        app:textPlacement="outer"
+        app:textSize="20dp"
+        app:textStyle="bold_italic" />
+
+    <org.labcluster.arctextview.ArcTextView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:anchorAngle="90"
+        app:anchorType="center"
+        app:drawDebugCircle="true"
+        app:fontFamily="@null"
+        app:text="PLACEHOLDER"
+        app:textColor="#FFFFFF"
+        app:textDirection="anticlockwise"
+        app:textOrientation="inward"
+        app:textPlacement="inner"
+        app:textSize="20dp"
+        app:textStyle="italic" />
+
+    <org.labcluster.arctextview.ArcTextView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:anchorAngle="180"
+        app:anchorType="center"
+        app:drawDebugCircle="true"
+        app:fontFamily="@null"
+        app:text="PLACEHOLDER"
+        app:textColor="#FFFFFF"
+        app:textDirection="clockwise"
+        app:textOrientation="outward"
+        app:textPlacement="outer"
+        app:textSize="20dp"
+        app:textStyle="bold" />
+
+    <org.labcluster.arctextview.ArcTextView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:anchorAngle="0"
+        app:anchorType="center"
+        app:drawDebugCircle="true"
+        app:fontFamily="@null"
+        app:text="PLACEHOLDER"
+        app:textColor="#FFFFFF"
+        app:textDirection="anticlockwise"
+        app:textOrientation="inward"
+        app:textPlacement="inner"
+        app:textSize="20dp"
+        app:textStyle="bold" />
+
+
+
+    <org.labcluster.arctextview.ArcTextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:anchorAngle="180"
+        app:anchorType="center"
+        app:drawDebugCircle="true"
+        app:fontFamily="@null"
+        app:text="PLACEHOLDER"
+        app:textColor="#FFFFFF"
+        app:textDirection="anticlockwise"
+        app:textOrientation="inward"
+        app:textPlacement="inner"
+        app:textSize="20dp"
+        app:textStyle="normal" />
+
+    <org.labcluster.arctextview.ArcTextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:anchorAngle="0"
+        app:anchorType="center"
+        app:drawDebugCircle="true"
+        app:fontFamily="@null"
+        app:text="PLACEHOLDER"
+        app:textColor="#FFFFFF"
+        app:textDirection="clockwise"
+        app:textOrientation="outward"
+        app:textPlacement="outer"
+        app:textSize="20dp"
+        app:textStyle="normal" />
+
+</FrameLayout>

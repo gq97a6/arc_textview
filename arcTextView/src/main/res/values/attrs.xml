@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ArcTextView">
+        <!-- Text to be drawn. -->
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="reference|color" />
+        <!-- Default text typeface style. -->
+        <attr name="textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+            <flag name="bold_italic" value="3" />
+        </attr>
+        <!-- Side of circle on which text will be drawn. -->
+        <attr name="textPlacement">
+            <enum name="outer" value="0" />
+            <enum name="inner" value="1" />
+        </attr>
+        <!-- Side to witch text will be facing. -->
+        <attr name="textOrientation">
+            <enum name="outward" value="0" />
+            <enum name="inward" value="1" />
+        </attr>
+        <!-- Text rotation direction. -->
+        <attr name="textDirection">
+            <enum name="clockwise" value="0" />
+            <enum name="anticlockwise" value="1" />
+        </attr>
+        <attr name="fontFamily" format="string" />
+        <!-- Angle at which anchor will be placed. -->
+        <attr name="anchorAngle" format="float" />
+        <!-- Type of anchor in relation to text. -->
+        <attr name="anchorType">
+            <enum name="start" value="0" />
+            <enum name="center" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <!-- Controls debug circle drawing. -->
+        <attr name="drawDebugCircle" format="boolean" />
+    </declare-styleable>
+</resources>
